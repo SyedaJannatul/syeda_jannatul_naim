@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Syeda Jannatul Naim - Resume</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+        .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .sidebar {
+            flex: 0 0 300px;
+            background-color: #082b10;
+            color: white;
+            padding: 30px;
+            min-height: 100vh;
+        }
+        .main-content {
+            flex: 1;
+            padding: 30px;
+            background-color: white;
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            margin: 0 auto 30px;
+            display: block;
+        }
+        .sidebar-section {
+            margin-bottom: 30px;
+        }
+        .sidebar-title {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            color: #f8f9fa;
+            border-bottom: 2px solid #04220c;
+            padding-bottom: 5px;
+        }
+        .contact-item {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: flex-start;
+        }
+        .contact-icon {
+            margin-right: 10px;
+            color: #f8f9fa;
+            width: 20px;
+            text-align: center;
+        }
+        .contact-text {
+            flex: 1;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .social-links a {
+            color: white;
+            font-size: 1.2rem;
+        }
+        .name {
+            font-size: 2.2rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+        .contact-link {
+            color: inherit;
+            text-decoration: none;
+        }
+        
+        .contact-link:hover {
+            text-decoration: underline;
+            color: #f8f9fa;
+        }
+        .title {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin: 30px 0 20px;
+            color: #2c3e50;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+        }
+        .institution {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        .degree {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        .position {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+        .company {
+            font-style: italic;
+            margin-bottom: 10px;
+        }
+        .location {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 10px;
+        }
+        .publication {
+            margin-bottom: 15px;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .skills-section {
+            padding: 30px;
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .skills-category {
+            margin-bottom: 25px;
+        }
+        .skills-category h3 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #dee2e6;
+            padding-bottom: 8px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            background-color: white;
+            padding: 8px 15px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
+        }
+        .skill-item:hover {
+            background-color: #2c3e50;
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        footer {
+            background-color: #ffffff;
+            color: black;
+            text-align: center;
+            font-size: 0.6rem;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+        @media (max-width: 768px) {
+            .wrapper {
+                flex-direction: column;
+            }
+            .sidebar {
+                min-height: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <img src="profile.png" alt="Profile Image" class="profile-img">
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Contact</h3>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-text">syeda.jannatul.cse@gmail.com</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                    <div class="contact-text">syedajannat14@gmail.com</div>
+                </div>
+                <!--<div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                    <div class="contact-text">+880-1521495455</div>
+                </div>-->
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <div class="contact-text">Dhaka, Bangladesh</div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3 class="sidebar-title">Profiles</h3>
+                <div class="contact-item">
+                <div class="contact-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <a href="https://scholar.google.com" target="_blank" class="contact-text contact-link">
+                        Google Scholar
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-researchgate"></i></div>
+                    <a href="https://www.researchgate.net/profile/Syeda-Naim-2" target="_blank" class="contact-text contact-link">
+                        ResearchGate
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-kaggle"></i></div>
+                    <a href="https://www.kaggle.com/syedajannatulnaim" target="_blank" class="contact-text contact-link">
+                        Kaggle
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fab fa-github"></i></div>
+                    <a href="https://github.com/SyedaJannatul" target="_blank" class="contact-text contact-link">
+                        Github
+                    </a>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon"><i class="fas fa-H"></i></div>
+                    <a href="https://huggingface.co/Jannat24" target="_blank" class="contact-text contact-link">
+                        HuggingFace
+                    </a>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/syeda-jannatul-naim-b431b6127/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/syeda.jannat.meem/"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+            </div>
+        </div>
+        
+        <div class="main-content">
+            <h1 class="name">Syeda Jannatul Naim</h1>
+            <div class="title">Researcher</div>
+
+            <div class="education">
+                <h2 class="section-title">Education</h2>
+                
+                <div class="mb-4">
+                    <div class="institution">University of Dhaka</div>
+                    <div class="degree">Masters of Science in Computer Science and Engineering</div>
+                    <ul>
+                        <li>CGPA: Appeared</li>
+                        <li><strong>Thesis title:</strong> Uncovering DeepFake Images for Identifying Source-Images.</li>
+                    </ul>
+                    <div class="date">March, 2025</div>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="institution">National University, Bangladesh (Dhaka City College)</div>
+                    <div class="degree">Bachelor of Science in Computer Science and Engineering</div>
+                    <ul>
+                        <li>CGPA: 3.82/4.0</li>
+                        <li><strong>Thesis title:</strong> Bengali and English Languages Fake-news Identification.</li>
+                    </ul>
+                    <div class="date">January, 2021</div>
+                </div>
+            </div>
+
+            <div class="experience">
+                <h2 class="section-title">Experience</h2>
+                
+                <div class="mb-4">
+                    <div class="position">Research Fellow (Part-time)</div>
+                    <div class="company">ICT Division, Ministry of Posts, Telecommunications and Information Technology, Government of the People's Republic of Bangladesh.</div>
+                    <div class="location">Dhaka, Bangladesh</div>
+                    <div class="date">Jan 2024-June 2025</div>
+                    <ul>
+                        <li>It is a fellowship program for 1 to 1.5 year , recognized as ICT Fellowship. I was awarded the ICT Fellowship for the M.Sc. research program, session of 2023-2024.</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="position">Intern (Full-time)</div>
+                    <div class="company">Ministry of Public Administration, Government of the People's Republic of Bangladesh.</div>
+                    <div class="location">Dhaka, Bangladesh</div>
+                    <div class="date">April 2024-June 2024</div>
+                    <ul>
+                        <li>I completed an internship at the Ministry of Public Administration, where I gained valuable experience in technology integration and policy-related projects.</li>
+                    </ul>
+                </div>
+                
+                <div class="mb-4">
+                    <div class="position">Lecturer (Part-time)</div>
+                    <div class="company">Daffodil Institute of Information Technology (DIIT), Dhaka, Bangladesh.</div>
+                    <div class="location">Dhaka, Bangladesh</div>
+                    <div class="date">April 2023-October 2023</div>
+                    <ul>
+                        <li>I served as a visiting lecturer for 7 months in the Department of Computer Science and Engineering, where I conducted theory and lab courses on object-oriented programming and structured programming.</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="publications">
+                <h2 class="section-title">Publications</h2>
+                
+                <div class="publication mb-3">
+                    <div>[1] <strong>Syeda Jannatul Naim</strong> and Sarker Tanveer Ahmed Rumee, "Uncovering deepfake images for identifying source-images," in <em>Proceedings of the 27th International Conference on Computer and Information Technology (ICCIT'24)</em>, (Cox's Bazar, Bangladesh), 2024.</div>
+                </div>
+                
+                <div class="publication">
+                    <div>[2] <strong>Syeda Jannatul Naim</strong> and Syed Rafiul Hoque, "Bengali and english languages fake-news identification," in <em>Proceedings of the 27th International Conference on Computer and Information Technology (ICCIT'24)</em>, (Cox's Bazar, Bangladesh), 2024.</div>
+                </div>
+            </div>
+            <div class="skills-section">
+            <h2 class="text-center mb-4">Skills</h2>
+            
+            <div class="skills-category">
+                <h3>Research Interest</h3>
+                <div class="skills-list">
+                    <div class="skill-item">Generative AI</div>
+                    <div class="skill-item">Computer Vision</div>
+                    <div class="skill-item">Natural Language Processing</div>
+                    <div class="skill-item">Explainable AI</div>
+                </div>
+            </div>
+                
+            <div class="skills-category">
+                <h3>Mathematics</h3>
+                <div class="skills-list">
+                    <div class="skill-item">Probalistic Statistics</div>
+                    <div class="skill-item">Linear algebra</div>
+                    <div class="skill-item">Calculas</div>
+                </div>
+            </div>
+
+            <div class="skills-category">
+                <h3>Coding</h3>
+                <div class="skills-list">
+                    <div class="skill-item">C</div>
+                    <div class="skill-item">C++</div>
+                    <div class="skill-item">Python</div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Databases</h3>
+                <div class="skills-list">
+                    <div class="skill-item">SQL</div>
+                    <div class="skill-item">MySQL</div>
+                    <div class="skill-item">NoSQL</div>
+                    <div class="skill-item">MongoDB</div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Web Development</h3>
+                <div class="skills-list">
+                    <div class="skill-item">HTML5</div>
+                    <div class="skill-item">CSS</div>
+                    <div class="skill-item">JavaScript (vanilla)</div>
+                    <div class="skill-item">PHP</div>
+                    <div class="skill-item">Python (Flask Framework)</div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Data Analysis & Deep Learning</h3>
+                <div class="skills-list">
+                    <div class="skill-item">Scikit-learn</div>
+                    <div class="skill-item">PyTorch</div>
+                    <div class="skill-item">NumPy</div>
+                    <div class="skill-item">SciPy</div>
+                    <div class="skill-item">Pandas</div>
+                    <div class="skill-item">Matplotlib</div>
+                    <div class="skill-item">Seaborn</div>
+                </div>
+            </div>
+            
+            <div class="skills-category">
+                <h3>Miscellaneous</h3>
+                <div class="skills-list">
+                    <div class="skill-item">Basic NLP</div>
+                    <div class="skill-item">LaTeX</div>
+                    <div class="skill-item">CISCO Packet Tracer (routing & switching)</div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="container">
+                &copy; Syeda Jannatul Naim. <br> All rights reserved, 2025.
+            </div>
+        </footer>
+
+    </div>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
+</body>
+</html>
